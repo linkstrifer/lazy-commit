@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 require('colors');
 const simpleGit = require('simple-git')();
 

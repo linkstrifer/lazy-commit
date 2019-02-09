@@ -3,11 +3,10 @@
   "version": "0.0.2",
   "main": "index.js",
   "bin": {
-    "lazy-commit": "./bin"
+    "lazy-commit": "./bin/index.js"
   },
   "scripts": {
-    "test": "npm run test-new-branch",
-    "test-new-branch": "node ./bin new-branch"
+    "test": "test-new-branch"
   },
   "author": "",
   "license": "ISC",

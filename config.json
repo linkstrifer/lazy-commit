@@ -1,0 +1,16 @@
+{
+  "new-branch": {
+    "output": "${type}/${name|slug}",
+    "questions": [
+      {
+        "id": "name",
+        "text": "Ticket id and title:"
+      },
+      {
+        "id": "type",
+        "text": "Branch type",
+        "options": ["feature", "bugfix", "hotfix"]
+      }
+    ]
+  }
+}

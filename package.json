@@ -6,7 +6,7 @@
     "lazy-commit": "./bin/index.js"
   },
   "scripts": {
-    "test": "test-new-branch"
+    "test": "lazy-commit new-branch"
   },
   "author": "",
   "license": "ISC",

@@ -6,6 +6,7 @@
     "lazy-commit": "./bin/index.js"
   },
   "scripts": {
+    "commit": "lazy-commit commit",
     "test": "lazy-commit new-branch"
   },
   "author": "",

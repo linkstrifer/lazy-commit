@@ -1,14 +1,35 @@
 {
+  "commit": {
+    "output": [
+      "[${ticketPriority}][${ticketId}] :: ${ticketTitle}",
+      "Ticket: http://b/${ticketId}"
+    ],
+    "questions": [
+      {
+        "id": "ticketId",
+        "label": "Ticket ID:"
+      },
+      {
+        "id": "ticketPriority",
+        "label": "Ticket priority:",
+        "options": ["P1", "P2", "P3", "P4"]
+      },
+      {
+        "id": "ticketTitle",
+        "label": "Ticket title:"
+      }
+    ]
+  },
   "new-branch": {
     "output": "${type}/${name|slug}",
     "questions": [
       {
         "id": "name",
-        "text": "Ticket id and title:"
+        "label": "Ticket id and title:"
       },
       {
         "id": "type",
-        "text": "Branch type",
+        "label": "Branch type",
         "options": ["feature", "bugfix", "hotfix"]
       }
     ]

@@ -2,7 +2,8 @@
   "commit": {
     "output": [
       "[${ticketPriority}][${ticketId}] :: ${ticketTitle}",
-      "Ticket: http://b/${ticketId}"
+      "Ticket: http://b/${ticketId}",
+      "Staging Link: ${stagingLink}"
     ],
     "questions": [
       {
@@ -17,6 +18,13 @@
       {
         "id": "ticketTitle",
         "label": "Ticket title:"
+      },
+      {
+        "id": "stagingLink",
+        "label": "Want to create a staging Link?",
+        "options": ["yes", "no"],
+        "exec": "${ticketId}-${ticketTitle|slug|limit:32}",
+        "output": "https://${ticketId}-${ticketTitle|slug|limit:32}-dot-googwebreview.appspot.com/about/"
       }
     ]
   },

@@ -2,11 +2,11 @@ const assert = require('assert')
 
 const testQuestions = [
   {
-    id: '1',
+    id: 1,
     label: 'Test question',
   },
   {
-    id: '2',
+    id: 2,
     label: 'Question with options',
     options: [1, 2, 3, 4],
   },
@@ -14,7 +14,7 @@ const testQuestions = [
 
 const testAnswers = {
   1: 'answer 1',
-  2: 'answer 2',
+  2: 'answer',
 }
 
 const {

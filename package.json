@@ -8,7 +8,8 @@
   "scripts": {
     "commit": "lazy-commit commit",
     "new-branch": "lazy-commit new-branch",
-    "test": "nyc --reporter=html --reporter=text mocha --watch --recursive"
+    "test": "nyc --reporter=text mocha --watch --recursive",
+    "test:coverage": "nyc --reporter=html mocha"
   },
   "author": "",
   "license": "ISC",

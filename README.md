@@ -2,7 +2,7 @@
 
 - [ ] Stage task
 - [ ] Stage subdomain generator task
-- [ ] Documentation
+- [ ] A good README pls
 - [ ] Load local config
 - [ ] Load global config
 - [ ] No staging changes prompt

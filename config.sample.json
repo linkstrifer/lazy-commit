@@ -17,7 +17,6 @@
       {
         "id": "testLink",
         "label": "Want to create a test Link?",
-        "options": ["yes", "no"],
         "exec": "node -e 'console.log(`test command`)'",
         "output": "https://CUSTOM.DOMAIN/${ticketId}-${ticketTitle|slug|limit:32}/"
       }

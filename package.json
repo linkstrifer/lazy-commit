@@ -1,9 +1,9 @@
 {
-  "name": "lazy-commit-message",
+"name": "lazy-commit-message",
   "version": "0.0.6",
   "main": "index.js",
   "bin": {
-    "lazy-commit": "./bin/index.js"
+    "lazy-commit": "./bin/lazy-commit.js"
   },
   "scripts": {
     "commit": "lazy-commit commit",

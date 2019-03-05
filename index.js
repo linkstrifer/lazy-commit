@@ -7,10 +7,10 @@ const loadConf = require('app-root-path').require;
 let globalConfig;
 
 try {
-  // globalConfig = loadConf('/lazy-commit.config.json');
+  globalConfig = loadConf('/lazy-commit.config.json');
 } catch (error) {
   try {
-    // globalConfig = require('./config.json');
+    globalConfig = require('./config.json');
   }
   catch (error) {
     console.log('No config file'.red);

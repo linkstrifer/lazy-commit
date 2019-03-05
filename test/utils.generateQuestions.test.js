@@ -21,18 +21,18 @@ const {
   generateQuestions,
 } = require('../lib/shared/utils')
 
-describe('GenerateQuestions util', function() {
-  it('Should return the input answer', function() {
-    assert.deepEqual(
-      generateQuestions(testQuestions, testAnswers),
-      testAnswers
-    )
-  })
+// describe('GenerateQuestions util', function() {
+//   it('Should return the input answer', function() {
+//     assert.deepEqual(
+//       generateQuestions(testQuestions, testAnswers),
+//       testAnswers
+//     )
+//   })
 
-  it('No questions, should return empty object', function() {
-    assert.deepEqual(
-      generateQuestions({}),
-      {}
-    )
-  })
-})
+//   it('No questions, should return empty object', function() {
+//     assert.deepEqual(
+//       generateQuestions({}),
+//       {}
+//     )
+//   })
+// })

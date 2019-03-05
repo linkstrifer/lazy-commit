@@ -20,18 +20,18 @@ const {
   generateQuestion,
 } = require('../lib/shared/utils')
 
-describe('GenerateQuestion util', function() {
-  it('Should return the input answer', function() {
-    assert.equal(
-      generateQuestion(testQuestions[0], testAnswers[0]),
-      testAnswers[0]
-    )
-  })
+// describe('GenerateQuestion util', function() {
+//   it('Should return the input answer', function() {
+//     assert.equal(
+//       generateQuestion(testQuestions[0], testAnswers[0]),
+//       testAnswers[0]
+//     )
+//   })
 
-  it('Question with options, should return the selected option', function() {
-    assert.equal(
-      generateQuestion(testQuestions[1], testAnswers[1]),
-      testAnswers[1]
-    )
-  })
-})
+//   it('Question with options, should return the selected option', function() {
+//     assert.equal(
+//       generateQuestion(testQuestions[1], testAnswers[1]),
+//       testAnswers[1]
+//     )
+//   })
+// })

@@ -1,0 +1,39 @@
+{
+  "commit": {
+    "output": [
+      "${ticketId} || ${ticketTitle}",
+      "Ticket url: http://CUSTOM.DOMAIN/${ticketId}",
+      "Test link: ${testLink}"
+    ],
+    "questions": [
+      {
+        "id": "ticketId",
+        "label": "Ticket ID:"
+      },
+      {
+        "id": "ticketTitle",
+        "label": "Ticket title:"
+      },
+      {
+        "id": "testLink",
+        "label": "Want to create a test Link?",
+        "exec": "node -e 'console.log(`test command`)'",
+        "output": "https://CUSTOM.DOMAIN/${ticketId}-${ticketTitle|slug|limit:32}/"
+      }
+    ]
+  },
+  "new-branch": {
+    "output": "${type}/${name|slug}",
+    "questions": [
+      {
+        "id": "name",
+        "label": "Ticket id and title:"
+      },
+      {
+        "id": "type",
+        "label": "Branch type",
+        "options": ["feature", "bugfix", "hotfix"]
+      }
+    ]
+  }
+}

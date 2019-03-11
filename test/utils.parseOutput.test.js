@@ -12,6 +12,7 @@ const variables = {
   d: 'variable_D',
 }
 
+const nullParsedTemplates = ['/', '/']
 
 const parsedTemplates = [
   `${variables.a}/${variables.b}`,
@@ -51,38 +52,38 @@ describe('ParseOutput util', function() {
     )
   })
 
-  it('Empty variables object, should return unparsed templates', function() {
+  it('Empty variables object, should return parsed templates with empty string instead of undefined variables', function() {
     assert.deepEqual(
       parseOutput(templates, {}),
-      templates
+      nullParsedTemplates
     )
   })
 
-  it('String instead of variables object, should return unparsed templates', function() {
+  it('String instead of variables object, should return parsed templates with empty string instead of undefined variables', function() {
     assert.deepEqual(
       parseOutput(templates, ''),
-      templates
+      nullParsedTemplates
     )
   })
 
-  it('Null instead of variables object, should return unparsed templates', function() {
+  it('Null instead of variables object, should return parsed templates with empty string instead of undefined variables', function() {
     assert.deepEqual(
       parseOutput(templates, null),
-      templates
+      nullParsedTemplates
     )
   })
 
-  it('Boolean instead of variables object, should return unparsed templates', function() {
+  it('Boolean instead of variables object, should return parsed templates with empty string instead of undefined variables', function() {
     assert.deepEqual(
       parseOutput(templates, true),
-      templates
+      nullParsedTemplates
     )
   })
 
-  it('Missing variables parameter, should return unparsed templates', function() {
+  it('Missing variables parameter, should return parsed templates with empty string instead of undefined variables', function() {
     assert.deepEqual(
       parseOutput(templates),
-      templates
+      nullParsedTemplates
     )
   })
 

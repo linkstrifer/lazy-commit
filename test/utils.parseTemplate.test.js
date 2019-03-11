@@ -6,6 +6,8 @@ const variables = {
   b: 'variable-B',
 }
 
+const nullParsedTemplate = '/'
+
 const {
   parseTemplate,
 } = require('../lib/shared/utils')
@@ -14,7 +16,7 @@ describe('ParseTemplate', function() {
   it('Should parse a template', function() {
     assert.equal(
       parseTemplate(template,variables),
-      'variableA/variable-B'
+      `${variables.a}/${variables.b}`
     )
   })
 
@@ -32,24 +34,24 @@ describe('ParseTemplate', function() {
     )
   })
 
-  it('Load a string instead of a variables object, should return unparsed template', function() {
+  it('Load a string instead of a variables object, should return parsed template with empty string instead of undefined variables', function() {
     assert.equal(
       parseTemplate(template, ''),
-      template
+      nullParsedTemplate
     )
   })
 
-  it('Load a number instead of a variables object, should return unparsed template', function() {
+  it('Load a number instead of a variables object, should return parsed template with empty string instead of undefined variables', function() {
     assert.equal(
       parseTemplate(template, 1234),
-      template
+      nullParsedTemplate
     )
   })
 
-  it('Load null instead of a variables object, should return unparsed template', function() {
+  it('Load null instead of a variables object, should return parsed template with empty string instead of undefined variables', function() {
     assert.equal(
       parseTemplate(template, null),
-      template
+      nullParsedTemplate
     )
   })
 })

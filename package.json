@@ -1,6 +1,6 @@
 {
   "name": "lazy-commit-message",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "main": "index.js",
   "bin": {
     "lazy-commit": "./bin/lazy-commit.js"
@@ -8,8 +8,9 @@
   "scripts": {
     "commit": "lazy-commit commit",
     "new-branch": "lazy-commit new-branch",
-    "test": "nyc --reporter=text mocha --watch --recursive",
-    "test:coverage": "nyc --reporter=html mocha"
+    "test": "nyc --reporter=html mocha --recursive",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
   "author": "",
   "license": "ISC",

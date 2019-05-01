@@ -151,3 +151,4 @@ After answering all the questions, this will create a new branch (i.e: `feature/
 
 - [ ] No staging changes prompt
 - [ ] Save answers for later use
+- [ ] Stage script

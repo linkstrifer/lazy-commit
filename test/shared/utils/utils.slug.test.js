@@ -2,10 +2,10 @@ const assert = require('assert')
 
 const {
   slug,
-} = require('../lib/shared/utils')
+} = require('../../../lib/shared/utils')
 
 const testString = 'slug " - / |  string 1234 _ á '
-const slugifiedString = 'slug-or-string-1234-_-a'
+const slugifiedString = 'slug-string-1234-_-a'
 
 describe('Slug filter', function() {
   it('Should slugify a string', function() {

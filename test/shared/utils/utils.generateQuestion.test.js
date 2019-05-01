@@ -18,7 +18,7 @@ const testAnswers = [
 
 const {
   generateQuestion,
-} = require('../lib/shared/utils')
+} = require('../../../lib/shared/utils')
 
 // describe('GenerateQuestion util', function() {
 //   it('Should return the input answer', function() {

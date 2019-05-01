@@ -2,7 +2,7 @@ const assert = require('assert')
 
 const {
   limit,
-} = require('../lib/shared/utils')
+} = require('../../../lib/shared/utils')
 
 describe('Limit string filter', function() {
   it('Should return a 10 characters string', function() {

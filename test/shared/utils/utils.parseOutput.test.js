@@ -21,7 +21,7 @@ const parsedTemplates = [
 
 const {
   parseOutput,
-} = require('../lib/shared/utils')
+} = require('../../../lib/shared/utils')
 
 describe('ParseOutput util', function() {
   it('Should parse templates', function() {

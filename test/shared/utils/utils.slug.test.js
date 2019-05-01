@@ -2,7 +2,7 @@ const assert = require('assert')
 
 const {
   slug,
-} = require('../lib/shared/utils')
+} = require('../../../lib/shared/utils')
 
 const testString = 'slug " - / |  string 1234 _ á '
 const slugifiedString = 'slug-string-1234-_-a'

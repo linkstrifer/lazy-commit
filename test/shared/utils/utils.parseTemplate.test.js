@@ -10,7 +10,7 @@ const nullParsedTemplate = '/'
 
 const {
   parseTemplate,
-} = require('../lib/shared/utils')
+} = require('../../../lib/shared/utils')
 
 describe('ParseTemplate', function() {
   it('Should parse a template', function() {

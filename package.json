@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "mocha": "^5.2.0",
+    "np": "^5.1.2",
     "nyc": "^13.3.0"
   },
   "prettier": {

@@ -10,7 +10,8 @@
     "new-branch": "lazy-commit new-branch",
     "test": "nyc --reporter=html mocha --recursive",
     "test:watch": "npm test -- --watch",
-    "test:coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
+    "test:coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
+    "publish": "np"
   },
   "author": "",
   "license": "ISC",

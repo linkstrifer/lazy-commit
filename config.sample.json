@@ -3,7 +3,8 @@
     "output": [
       "${ticketId} || ${ticketTitle}",
       "Ticket url: http://CUSTOM.DOMAIN/${ticketId}",
-      "Test link: ${testLink}"
+      "Type: ${type}",
+      "Affected locales: ${locales.join(', ')}"
     ],
     "questions": [
       {
@@ -18,21 +19,18 @@
         "id": "testLink",
         "label": "Want to create a test Link?",
         "exec": "node -e 'console.log(`test command`)'",
-        "output": "https://CUSTOM.DOMAIN/${ticketId}-${ticketTitle|slug|limit:32}/"
-      }
-    ]
-  },
-  "new-branch": {
-    "output": "${type}/${name|slug}",
-    "questions": [
-      {
-        "id": "name",
-        "label": "Ticket id and title:"
+        "output": "https://CUSTOM.DOMAIN/${ticketId}-${ticketTitle}/"
       },
       {
         "id": "type",
-        "label": "Branch type",
-        "options": ["feature", "bugfix", "hotfix"]
+        "label": "Type:",
+        "options": ["feature", "hotfix"]
+      },
+      {
+        "id": "locales",
+        "label": "Affected locales:",
+        "options": ["en-us", "es-us", "ja-jp"],
+        "multiple": true
       }
     ]
   }

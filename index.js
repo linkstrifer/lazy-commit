@@ -11,14 +11,13 @@ try {
 } catch (error) {
   try {
     globalConfig = require('./config.json');
-  }
-  catch (error) {
+  } catch (error) {
     console.log('No config file'.red);
   }
 }
 
 const scripts = {
-  'commit': require('./lib/tasks/commit'),
+  commit: require('./lib/tasks/commit'),
   'new-branch': require('./lib/tasks/new-branch'),
 };
 

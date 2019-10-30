@@ -1,17 +1,19 @@
 const assert = require('assert')
 
-const templates = ['${a}/${b}', '${c}/${d}']
+const templates = ['${a}/${b}', '${c}/${d}', '1, 2, 3']
 
 const variables = {
   a: 'variableA',
   b: 'variable-B',
   c: 'variable C',
   d: 'variable_D',
+  e: [1, 2, 3],
 }
 
 const parsedTemplates = [
   `${variables.a}/${variables.b}`,
   `${variables.c}/${variables.d}`,
+  `${variables.e.join(', ')}`,
 ]
 
 const { parseOutput } = require('../../../lib/shared/utils')

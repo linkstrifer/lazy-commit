@@ -26,7 +26,7 @@ $ npm i -S lazy-commit-message
 
 First, you need a config file, check [the sample config file](config.sample.json).
 
-### 1.2.1. Config parametes
+### 1.2.1. Config parameters
 
 #### 1.2.1.1. Questions
 
